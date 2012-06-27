@@ -11,6 +11,8 @@ endif
 
 " Bundles
 NeoBundle 'msanders/snipmate.vim'
+NeoBundle 'https://bitbucket.org/ns9tks/vim-l9/'
+NeoBundle 'https://bitbucket.org/ns9tks/vim-autocomplpop/'
 
 " scroll jump
 set sj=1
