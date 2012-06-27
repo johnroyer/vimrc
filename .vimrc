@@ -64,10 +64,3 @@ nn      <leader>q :QFix<cr>
 
 set nu
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-Bundle 'gmarik/vundle'
-Bundle 'msanders/snipmate.vim'
-Bundle 'Shougo/neocomplcache'
-
