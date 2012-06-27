@@ -9,6 +9,9 @@ if has('vim_starting')
    call neobundle#rc(expand('~/.vim/bundle/'))
 endif
 
+" Bundles
+NeoBundle 'msanders/snipmate.vim'
+
 " scroll jump
 set sj=1
 " scroll off
