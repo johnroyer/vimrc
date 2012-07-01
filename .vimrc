@@ -15,6 +15,7 @@ NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'https://bitbucket.org/ns9tks/vim-l9/'
 NeoBundle 'https://bitbucket.org/ns9tks/vim-autocomplpop/'
 NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'jelera/vim-javascript-syntax'
 
 " scroll jump
 set sj=1
