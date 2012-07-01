@@ -14,6 +14,7 @@ NeoBundle 'msanders/snipmate.vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'https://bitbucket.org/ns9tks/vim-l9/'
 NeoBundle 'https://bitbucket.org/ns9tks/vim-autocomplpop/'
+NeoBundle 'pangloss/vim-javascript'
 
 " scroll jump
 set sj=1
