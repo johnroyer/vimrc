@@ -10,9 +10,9 @@ if has('vim_starting')
 endif
 
 " Bundles
-NeoBundle 'msanders/snipmate.vim'
-NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'https://bitbucket.org/ns9tks/vim-l9/'
+NeoBundle 'msanders/snipmate.vim'
+"NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'https://bitbucket.org/ns9tks/vim-autocomplpop/'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'jelera/vim-javascript-syntax'
