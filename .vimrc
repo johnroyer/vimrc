@@ -1,6 +1,21 @@
-syntax on
+" Required by neobundle
+set nocompatible
 filetype off
-filetype plugin on
+filetype plugin indent off
+
+" Load neobundle
+if has('vim_starting')
+   set runtimepath+=~/.vim/bundle/neobundle.vim/
+   call neobundle#rc(expand('~/.vim/bundle/'))
+endif
+
+" Bundles
+NeoBundle 'https://bitbucket.org/ns9tks/vim-l9/'
+NeoBundle 'msanders/snipmate.vim'
+"NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'https://bitbucket.org/ns9tks/vim-autocomplpop/'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'jelera/vim-javascript-syntax'
 
 " scroll jump
 set sj=1
@@ -62,5 +77,6 @@ fu! QFixToggle(forced)
 endf   
 nn      <leader>q :QFix<cr>
 
+syntax on
 set nu
 
