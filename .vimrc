@@ -11,11 +11,15 @@ endif
 
 " Bundles
 NeoBundle 'https://bitbucket.org/ns9tks/vim-l9/'
-NeoBundle 'msanders/snipmate.vim'
-"NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'https://bitbucket.org/ns9tks/vim-autocomplpop/'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'jelera/vim-javascript-syntax'
+NeoBundle 'OmniCppComplete'
+NeoBundle 'garbas/vim-snipmate'
+NeoBundle 'tomtom/tlib_vim'
+NeoBundle 'MarcWeber/vim-addon-mw-utils'
+NeoBundle 'honza/snipmate-snippets'
 
 " scroll jump
 set sj=1
@@ -79,4 +83,16 @@ nn      <leader>q :QFix<cr>
 
 syntax on
 set nu
+
+" OmniCompl
+setl omnifunc=nullcomplete#Complete
+autocmd FileType * setl omnifunc=nullcomplete#Complete
+autocmd FileType python setl omnifunc=pythoncomplete#Complete
+autocmd FileType javascript setl omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html setl omnifunc=htmlcomplete#CompleteTags noci
+autocmd FileType css setl omnifunc=csscomplete#CompleteCSS noci
+autocmd FileType xml setl omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php setl omnifunc=phpcomplete#CompletePHP
+autocmd FileType c setl omnifunc=ccomplete#Complete
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 
