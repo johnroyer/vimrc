@@ -20,6 +20,7 @@ NeoBundle 'garbas/vim-snipmate'
 NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'honza/snipmate-snippets'
+NeoBundle 'flazz/vim-colorschemes'
 
 " scroll jump
 set sj=1
