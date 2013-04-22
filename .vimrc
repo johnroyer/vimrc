@@ -13,14 +13,11 @@ endif
 NeoBundle 'https://bitbucket.org/ns9tks/vim-l9/'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'https://bitbucket.org/ns9tks/vim-autocomplpop/'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'OmniCppComplete'
 NeoBundle 'garbas/vim-snipmate'
 NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
-NeoBundle 'honza/snipmate-snippets'
-NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'honza/vim-snippets'
 
 " scroll jump
 set sj=1
