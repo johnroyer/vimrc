@@ -13,6 +13,12 @@ Plugins installed:
    - [vim-snippets](https://github.com/honza/vim-snippets)
 
 
+Requirements
+============
+
+You need Git and Mercurial installed first.
+
+
 Installation
 ============
 
