@@ -29,7 +29,10 @@ set  wildignore+=*.o,*.a,*.so,*.obj,*.exe,*.lib,*.ncb,*.opt,*.plg,.svn,.git
 " set wildoptions
 set  winaltkeys=no
 
+" enpandtab: use space instead of tab
 set et
+
+" shiftwidth: number of space for indentation
 set sw=3
 set ts=3
 set sts=3
@@ -39,11 +42,19 @@ set mat=15
 set ignorecase
 set smartcase
 set ruler is nowrap ai si hls sm bs=indent,eol,start 
+
+" set file format to Unix
 set ff=unix
 
 " encoding solutions
 set fencs=utf-8,big5,euc-jp,utf-bom,iso8859-1
 set fenc=utf-8 enc=utf-8 tenc=utf-8
+
+" Syntax highlight
+syntax on
+
+" Show line numbers
+set nu
 
 " save view
 autocmd  BufWinLeave *.*			silent mkview
@@ -78,9 +89,6 @@ fu! QFixToggle(forced)
   en
 endf   
 nn      <leader>q :QFix<cr>
-
-syntax on
-set nu
 
 " OmniCompl
 setl omnifunc=nullcomplete#Complete
