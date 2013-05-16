@@ -18,6 +18,7 @@ NeoBundle 'garbas/vim-snipmate'
 NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'honza/vim-snippets'
+NeoBundle 'mattn/zencoding-vim'
 
 " scroll jump
 set sj=1
