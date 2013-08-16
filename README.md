@@ -11,6 +11,8 @@ Plugins installed:
    - [tlib_vim](https://github.com/tomtom/tlib_vim)
    - [vim-addon-mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils)
    - [vim-snippets](https://github.com/honza/vim-snippets)
+ - [zencoding-vim](https://github.com/mattn/zencoding-vim)
+ - [taglist.vim](http://www.vim.org/scripts/script.php?script_id=273)
 
 
 Requirements

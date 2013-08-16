@@ -18,7 +18,8 @@ NeoBundle 'garbas/vim-snipmate'
 NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'honza/vim-snippets'
-NeoBundle 'mattn/zencoding-vim'
+NeoBundle 'mattn/emmet-vim'
+NeoBundle 'vim-scripts/taglist.vim'
 
 " scroll jump
 set sj=1
@@ -103,3 +104,10 @@ autocmd FileType php setl omnifunc=phpcomplete#CompletePHP
 autocmd FileType c setl omnifunc=ccomplete#Complete
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 
+" TagList sorting type
+let Tlist_Sort_Type = "name"     " sort by name
+let Tlist_Exit_OnlyWindow = 1    " close tag list if there is no other windows
+
+" No new line at end of line
+set noeol
+set binary
