@@ -104,6 +104,9 @@ autocmd FileType php setl omnifunc=phpcomplete#CompletePHP
 autocmd FileType c setl omnifunc=ccomplete#Complete
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 
+" customize popup menu color
+highlight PmenuSel term=reverse ctermbg=white ctermfg=black
+
 " TagList sorting type
 let Tlist_Sort_Type = "name"     " sort by name
 let Tlist_Exit_OnlyWindow = 1    " close tag list if there is no other windows
