@@ -108,6 +108,3 @@ autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 let Tlist_Sort_Type = "name"     " sort by name
 let Tlist_Exit_OnlyWindow = 1    " close tag list if there is no other windows
 
-" No new line at end of line
-set noeol
-set binary
