@@ -114,3 +114,6 @@ let Tlist_Exit_OnlyWindow = 1    " close tag list if there is no other windows
 " No new line at end of line
 set noeol
 set binary
+
+" Custom key map for switch window
+nmap ww <C-w>
