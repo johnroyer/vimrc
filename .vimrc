@@ -111,3 +111,5 @@ highlight PmenuSel term=reverse ctermbg=white ctermfg=black
 let Tlist_Sort_Type = "name"     " sort by name
 let Tlist_Exit_OnlyWindow = 1    " close tag list if there is no other windows
 
+" Custom key mapping for switching window
+nmap ww <C-w>
