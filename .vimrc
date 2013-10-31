@@ -20,6 +20,7 @@ NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'vim-scripts/taglist.vim'
+NeoBundle 'vim-scripts/AutoFenc.vim'
 
 " scroll jump
 set sj=1
