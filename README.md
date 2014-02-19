@@ -13,6 +13,7 @@ Plugins installed:
    - [vim-snippets](https://github.com/honza/vim-snippets)
  - [zencoding-vim](https://github.com/mattn/emmet-vim)
  - [taglist.vim](http://www.vim.org/scripts/script.php?script_id=273)
+ - [AutoFenc.vim](https://github.com/vim-scripts/AutoFenc.vim)
 
 
 Requirements

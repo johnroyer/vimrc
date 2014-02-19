@@ -20,6 +20,7 @@ NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'vim-scripts/taglist.vim'
+NeoBundle 'vim-scripts/AutoFenc.vim'
 
 " scroll jump
 set sj=1
@@ -111,9 +112,3 @@ highlight PmenuSel term=reverse ctermbg=white ctermfg=black
 let Tlist_Sort_Type = "name"     " sort by name
 let Tlist_Exit_OnlyWindow = 1    " close tag list if there is no other windows
 
-" No new line at end of line
-set noeol
-set binary
-
-" Custom key map for switch window
-nmap ww <C-w>
