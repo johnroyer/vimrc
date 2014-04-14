@@ -59,6 +59,9 @@ syntax on
 " Show line numbers
 set nu
 
+" larger register ("<"), default on others
+set viminfo='100,<500,s10,h
+
 " save view
 autocmd  BufWinLeave *.*			silent mkview
 autocmd  BufWinEnter *.*			silent loadview
