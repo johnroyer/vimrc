@@ -114,4 +114,4 @@ highlight PmenuSel term=reverse ctermbg=white ctermfg=black
 " TagList sorting type
 let Tlist_Sort_Type = "name"     " sort by name
 let Tlist_Exit_OnlyWindow = 1    " close tag list if there is no other windows
-
+let tlist_php_settings='php;f:function' " do not show variable when open php files
