@@ -67,6 +67,9 @@ syntax on
 " Show line numbers
 set nu
 
+" larger register ("<"), default on others
+set viminfo='100,<500,s10,h
+
 " save view
 autocmd  BufWinLeave *.*			silent mkview
 autocmd  BufWinEnter *.*			silent loadview
@@ -116,7 +119,7 @@ autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 " customize popup menu color
 highlight PmenuSel term=reverse ctermbg=white ctermfg=black
 
-" TagList sorting type
+" TagList settings
 let Tlist_Sort_Type = "name"     " sort by name
 let Tlist_Exit_OnlyWindow = 1    " close tag list if there is no other windows
-
+let tlist_php_settings='php;c:class;i:interfaces;d:constant;f:function' " do not show variable when open php files
