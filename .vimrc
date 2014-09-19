@@ -40,6 +40,14 @@ set sw=3
 set ts=3
 set sts=3
 
+if &sw == 3
+  set listchars=tab:-->
+endif
+if &sw == 2
+  set listchars=tab:->
+endif
+set list
+
 set modeline
 set mat=15
 set ignorecase
