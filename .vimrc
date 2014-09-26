@@ -123,3 +123,7 @@ highlight PmenuSel term=reverse ctermbg=white ctermfg=black
 let Tlist_Sort_Type = "name"     " sort by name
 let Tlist_Exit_OnlyWindow = 1    " close tag list if there is no other windows
 let tlist_php_settings='php;c:class;i:interfaces;d:constant;f:function' " do not show variable when open php files
+
+" arrow alias key for autocomplpop
+imap <C-J> <Down>
+imap <C-K> <Up>
