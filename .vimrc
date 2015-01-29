@@ -127,6 +127,8 @@ let tlist_php_settings='php;c:class;i:interfaces;d:constant;f:function' " do not
 " arrow alias key for autocomplpop
 imap <C-J> <Down>
 imap <C-K> <Up>
+imap <C-L> <End>
+imap <C-H> <Home>
 
 " paste mode
 nnoremap <silent> <F9> :set paste<CR>
