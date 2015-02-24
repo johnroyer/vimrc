@@ -134,5 +134,7 @@ imap <C-H> <Home>
 nnoremap <silent> <F9> :set paste<CR>
 nnoremap <silent> <F10> :set nopaste<CR>
 
+" shotkey let PHP check syntax for current filet
+nmap <C-P> :!php %<CR>
 
 
