@@ -40,6 +40,7 @@ set sw=3
 set ts=3
 set sts=3
 
+" show tabs as arrows
 if &sw == 3
   set listchars=tab:-->
 endif
