@@ -21,6 +21,7 @@ NeoBundle 'honza/vim-snippets'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'vim-scripts/taglist.vim'
 NeoBundle 'vim-scripts/AutoFenc.vim'
+NeoBundle 'stephpy/vim-php-cs-fixer'
 
 " scroll jump
 set sj=1
