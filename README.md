@@ -27,3 +27,14 @@ You need Git and Mercurial installed first.
     chmod u+x install.sh
     ./install.sh
 
+# Configuration
+
+Some config need to change by yourself.
+
+## vim-php-cs-fixer
+
+Download [http://cs.sensiolabs.org/](php-cs-fixer). Find `g:php_cs_fixer_path` in .vimrc and point to the path php-cs-fixer installed.
+
+There is key binding `<leader>pcc` for [PHP-CodeSniffer](http://pear.php.net/package/PHP_CodeSniffer/redirected). Install [PHP-CodeSniffer](http://pear.php.net/package/PHP_CodeSniffer/redirected) and change the path:
+
+    sudo aptitude install phpcs
