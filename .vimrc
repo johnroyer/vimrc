@@ -70,6 +70,9 @@ set viminfo='100,<500,s10,h
 autocmd  BufWinLeave *.*			silent mkview
 autocmd  BufWinEnter *.*			silent loadview
 
+" key map leader
+let mapleader=','
+
 " easytab
 nm			<tab> v>
 nm			<s-tab> v<
