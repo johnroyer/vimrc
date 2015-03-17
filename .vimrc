@@ -41,12 +41,6 @@ set ts=4
 set sts=4
 
 " show tabs as arrows
-"if &sw == 3
-"  set listchars=tab:-->
-"endif
-"if &sw == 2
-"  set listchars=tab:->
-"endif
 set list
 
 set modeline
