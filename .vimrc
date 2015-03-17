@@ -36,17 +36,17 @@ set  winaltkeys=no
 set et
 
 " shiftwidth: number of space for indentation
-set sw=3
-set ts=3
-set sts=3
+set sw=4
+set ts=4
+set sts=4
 
 " show tabs as arrows
-if &sw == 3
-  set listchars=tab:-->
-endif
-if &sw == 2
-  set listchars=tab:->
-endif
+"if &sw == 3
+"  set listchars=tab:-->
+"endif
+"if &sw == 2
+"  set listchars=tab:->
+"endif
 set list
 
 set modeline
@@ -118,7 +118,7 @@ autocmd FileType c setl omnifunc=ccomplete#Complete
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 
 " customize popup menu color
-highlight PmenuSel term=reverse ctermbg=white ctermfg=black
+"highlight PmenuSel term=reverse ctermbg=white ctermfg=black
 
 " TagList settings
 let Tlist_Sort_Type = "name"     " sort by name
