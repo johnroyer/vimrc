@@ -1,5 +1,4 @@
-Features
-========
+# Features
 
 Plugins installed:
  - [NeoBundle](https://github.com/Shougo/neobundle.vim)
@@ -17,15 +16,14 @@ Plugins installed:
  - [vim-php-cs-fixer](https://github.com/stephpy/vim-php-cs-fixer)
 
 
-Requirements
-============
+# Requirements
 
 You need Git and Mercurial installed first.
 
 
-Installation
-============
+# Installation
 
     git clone https://github.com/johnroyer/vimrc.git
     chmod u+x install.sh
     ./install.sh
+
