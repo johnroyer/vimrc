@@ -156,4 +156,5 @@ let g:php_cs_fixer_verbose = 1
 " php-cs-fixer mapping
 nmap <leader>pcd :call PhpCsFixerFixDirectory()<CR>
 nmap <leader>pcf :call PhpCsFixerFixFile()<CR>
+nmap <leader>pcc :!phpcs %<CR>
 
