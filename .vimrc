@@ -125,6 +125,13 @@ imap <C-K> <Up>
 imap <C-L> <End>
 imap <C-H> <Home>
 
+" PHP Syntax Highlight
+let php_sql_query = 1
+let php_htmlInStrings = 1
+let php_minlines = 3000
+let php_baselib = 1
+let php_asp_tags = 1
+
 " paste mode
 nnoremap <silent> <F9> :set paste<CR>
 nnoremap <silent> <F10> :set nopaste<CR>
