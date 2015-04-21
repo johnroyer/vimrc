@@ -22,6 +22,7 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'vim-scripts/taglist.vim'
 NeoBundle 'vim-scripts/AutoFenc.vim'
 NeoBundle 'myusuf3/numbers.vim'
+NeoBundle 'stephpy/vim-php-cs-fixer'
 
 " scroll jump
 set sj=1
@@ -37,17 +38,11 @@ set  winaltkeys=no
 set et
 
 " shiftwidth: number of space for indentation
-set sw=3
-set ts=3
-set sts=3
+set sw=4
+set ts=4
+set sts=4
 
 " show tabs as arrows
-if &sw == 3
-  set listchars=tab:-->
-endif
-if &sw == 2
-  set listchars=tab:->
-endif
 set list
 
 set modeline
@@ -75,6 +70,9 @@ set viminfo='100,<500,s10,h
 " save view
 autocmd  BufWinLeave *.*			silent mkview
 autocmd  BufWinEnter *.*			silent loadview
+
+" key map leader
+let mapleader=','
 
 " easytab
 nm			<tab> v>
@@ -119,7 +117,7 @@ autocmd FileType c setl omnifunc=ccomplete#Complete
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 
 " customize popup menu color
-highlight PmenuSel term=reverse ctermbg=white ctermfg=black
+"highlight PmenuSel term=reverse ctermbg=white ctermfg=black
 
 " TagList settings
 let Tlist_Sort_Type = "name"     " sort by name
@@ -132,6 +130,13 @@ imap <C-K> <Up>
 imap <C-L> <End>
 imap <C-H> <Home>
 
+" PHP Syntax Highlight
+let php_sql_query = 1
+let php_htmlInStrings = 1
+let php_minlines = 3000
+let php_baselib = 1
+let php_asp_tags = 1
+
 " paste mode
 nnoremap <silent> <F9> :set paste<CR>
 nnoremap <silent> <F10> :set nopaste<CR>
@@ -139,4 +144,18 @@ nnoremap <silent> <F10> :set nopaste<CR>
 " shotkey let PHP check syntax for current filet
 nmap <C-P> :!php %<CR>
 
+" vim-php-cs-fixer settings
+let g:php_cs_fixer_path = "~/devel/phpcs-fixer/php-cs-fixer.phar"
+let g:php_cs_fixer_level = "psr2"
+let g:php_cs_fixer_config = "default"
+let g:php_cs_fixer_php_path = "php"
+"let g:php_cs_fixer_fixers_list = "linefeed,short_tag,indentation"
+"let g:php_cs_fixer_enable_default_mapping = 1
+let g:php_cs_fixer_dry_run = 0
+let g:php_cs_fixer_verbose = 1
+
+" php-cs-fixer mapping
+nmap <leader>pcd :call PhpCsFixerFixDirectory()<CR>
+nmap <leader>pcf :call PhpCsFixerFixFile()<CR>
+nmap <leader>pcc :!phpcs %<CR>
 

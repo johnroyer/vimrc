@@ -1,5 +1,4 @@
-Features
-========
+# Features
 
 Plugins installed:
  - [NeoBundle](https://github.com/Shougo/neobundle.vim)
@@ -15,17 +14,28 @@ Plugins installed:
  - [taglist.vim](http://www.vim.org/scripts/script.php?script_id=273)
  - [AutoFenc.vim](https://github.com/vim-scripts/AutoFenc.vim)
  - [numbers.vim](https://github.com/myusuf3/numbers.vim)
+ - [vim-php-cs-fixer](https://github.com/stephpy/vim-php-cs-fixer)
 
 
-Requirements
-============
+# Requirements
 
 You need Git and Mercurial installed first.
 
 
-Installation
-============
+# Installation
 
     git clone https://github.com/johnroyer/vimrc.git
     chmod u+x install.sh
     ./install.sh
+
+# Configuration
+
+Some config need to change by yourself.
+
+## vim-php-cs-fixer
+
+Download [php-cs-fixer](http://cs.sensiolabs.org/). Find `g:php_cs_fixer_path` in .vimrc and point to the path php-cs-fixer installed.
+
+There is key binding `<leader>pcc` for [PHP-CodeSniffer](http://pear.php.net/package/PHP_CodeSniffer/redirected). Install [PHP-CodeSniffer](http://pear.php.net/package/PHP_CodeSniffer/redirected) and change the path:
+
+    sudo aptitude install phpcs
