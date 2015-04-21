@@ -14,6 +14,7 @@ Plugins installed:
  - [zencoding-vim](https://github.com/mattn/emmet-vim)
  - [taglist.vim](http://www.vim.org/scripts/script.php?script_id=273)
  - [AutoFenc.vim](https://github.com/vim-scripts/AutoFenc.vim)
+ - [numbers.vim](https://github.com/myusuf3/numbers.vim)
 
 
 Requirements
