@@ -44,6 +44,7 @@ set sts=4
 
 " show tabs as arrows
 set list
+set listchars=tab:>-
 
 set modeline
 set mat=15
