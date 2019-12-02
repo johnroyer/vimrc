@@ -61,6 +61,8 @@ set fenc=utf-8 enc=utf-8 tenc=utf-8
 
 " Syntax highlight
 syntax on
+highlight PmenuSel ctermbg=darkgreen ctermfg=white
+highlight Pmenu ctermbg=magenta ctermfg=gray
 
 " Show line numbers
 set nu
@@ -117,8 +119,6 @@ autocmd FileType php setl omnifunc=phpcomplete#CompletePHP
 autocmd FileType c setl omnifunc=ccomplete#Complete
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 
-" customize popup menu color
-"highlight PmenuSel term=reverse ctermbg=white ctermfg=black
 
 " TagList settings
 let Tlist_Sort_Type = "name"     " sort by name
