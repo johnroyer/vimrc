@@ -61,8 +61,13 @@ set fenc=utf-8 enc=utf-8 tenc=utf-8
 
 " Syntax highlight
 syntax on
-highlight PmenuSel ctermbg=darkgreen ctermfg=white
-highlight Pmenu ctermbg=magenta ctermfg=gray
+"highlight Pmenu ctermbg=5 ctermfg=7
+"highlight PmenuSel ctermbg=13 ctermfg=14 gui=bold
+highlight Pmenu ctermbg=8 ctermbg=127
+highlight PmenuSel ctermbg=21 ctermbg=7 gui=bold guifg=white
+highlight PmenuSbar ctermfg=8
+"highlight PmenuThumb
+
 
 " Show line numbers
 set nu
