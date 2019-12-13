@@ -69,6 +69,9 @@ colorscheme atom
 " Show line numbers
 set nu
 
+" show cursorline
+set cursorline
+
 " larger register ("<"), default on others
 set viminfo='100,<500,s10,h
 
