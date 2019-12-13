@@ -62,6 +62,10 @@ set fenc=utf-8 enc=utf-8 tenc=utf-8
 " Syntax highlight
 syntax on
 
+" support 256 colors
+set t_Co=256
+colorscheme atom
+
 " Show line numbers
 set nu
 
