@@ -151,6 +151,7 @@ nnoremap <silent> <F10> :set nopaste<CR>
 
 " shotkey let PHP check syntax for current filet
 nmap <C-P> :!php -l %<CR>
+nmap <leader>e :!php %<CR>
 
 " vim-php-cs-fixer settings
 let g:php_cs_fixer_path = "~/devel/phpcs-fixer/php-cs-fixer.phar"
