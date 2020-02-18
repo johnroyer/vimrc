@@ -69,8 +69,15 @@ highlight PmenuSbar ctermfg=8
 "highlight PmenuThumb
 
 
+" support 256 colors
+set t_Co=256
+colorscheme atom
+
 " Show line numbers
 set nu
+
+" show cursorline
+set cursorline
 
 " larger register ("<"), default on others
 set viminfo='100,<500,s10,h
@@ -149,6 +156,7 @@ nnoremap <silent> <F10> :set nopaste<CR>
 
 " shotkey let PHP check syntax for current filet
 nmap <C-P> :!php -l %<CR>
+nmap <leader>e :!php %<CR>
 
 " vim-php-cs-fixer settings
 let g:php_cs_fixer_path = "~/devel/phpcs-fixer/php-cs-fixer.phar"
