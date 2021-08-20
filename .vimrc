@@ -11,7 +11,6 @@ endif
 
 " Bundles
 NeoBundle 'davidhalter/jedi-vim'
-NeoBundle 'garbas/vim-snipmate'
 NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'honza/vim-snippets'
