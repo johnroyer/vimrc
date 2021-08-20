@@ -10,10 +10,6 @@ if has('vim_starting')
 endif
 
 " Bundles
-NeoBundle 'vim-scripts/L9'
-NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'othree/vim-autocomplpop'
-NeoBundle 'OmniCppComplete'
 NeoBundle 'garbas/vim-snipmate'
 NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
@@ -22,7 +18,6 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'vim-scripts/taglist.vim'
 NeoBundle 'vim-scripts/AutoFenc.vim'
 NeoBundle 'myusuf3/numbers.vim'
-NeoBundle 'stephpy/vim-php-cs-fixer'
 
 " scroll jump
 set sj=1
