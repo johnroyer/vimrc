@@ -56,28 +56,26 @@ set ruler is nowrap ai si hls sm bs=indent,eol,start
 set ff=unix
 
 " encoding solutions
-set fencs=utf-8,big5,euc-jp,utf-bom,iso8859-1
-set fenc=utf-8 enc=utf-8 tenc=utf-8
+"set fencs=utf-8,big5,euc-jp,utf-bom,iso8859-1
+"set fenc=utf-8 enc=utf-8 tenc=utf-8
+set encoding=utf-8
+set fileencoding=utf-8
+
+" colorscheme
+colorscheme atom
 
 " Syntax highlight
 syntax on
-"highlight Pmenu ctermbg=5 ctermfg=7
-"highlight PmenuSel ctermbg=13 ctermfg=14 gui=bold
-highlight Pmenu ctermbg=8 ctermbg=127
-highlight PmenuSel ctermbg=21 ctermbg=7 gui=bold guifg=white
-highlight PmenuSbar ctermfg=8
-"highlight PmenuThumb
 
+" popup menu color
+"highlight Pmenu    ctermfg=250 ctermbg=235 guifg=#bcbcbc guibg=#262626
+"highlight PmenuSel ctermfg=250 ctermbg=131 guifg=#bcbcbc guibg=#af5f5f
+highlight Pmenu    ctermfg=white ctermbg=magenta
+highlight PmenuSel ctermfg=white ctermbg=blue gui=bold
 
-" support 256 colors
-set t_Co=256
-colorscheme atom
 
 " Show line numbers
 set nu
-
-" show cursorline
-set cursorline
 
 " larger register ("<"), default on others
 set viminfo='100,<500,s10,h
@@ -85,6 +83,11 @@ set viminfo='100,<500,s10,h
 " save view
 autocmd  BufWinLeave *.*			silent mkview
 autocmd  BufWinEnter *.*			silent loadview
+
+" in makefiles, don't expand tabs to spaces, since actual tab characters are
+" needed, and have indentation at 8 chars to be sure that all indents are tabs
+" (despite the mappings later):
+autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=0
 
 " key map leader
 let mapleader=','
@@ -156,7 +159,6 @@ nnoremap <silent> <F10> :set nopaste<CR>
 
 " shotkey let PHP check syntax for current filet
 nmap <C-P> :!php -l %<CR>
-nmap <leader>e :!php %<CR>
 
 " vim-php-cs-fixer settings
 let g:php_cs_fixer_path = "~/devel/phpcs-fixer/php-cs-fixer.phar"
