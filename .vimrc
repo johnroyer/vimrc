@@ -24,6 +24,9 @@ NeoBundle 'vim-scripts/AutoFenc.vim'
 NeoBundle 'myusuf3/numbers.vim'
 NeoBundle 'stephpy/vim-php-cs-fixer'
 
+" Fix 'SnipMate-deprecated'
+let g:snipMate = { 'snippet_version' : 1 }
+
 " scroll jump
 set sj=1
 " scroll off
