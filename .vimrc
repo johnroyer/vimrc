@@ -1,15 +1,25 @@
-" Required by neobundle
-set nocompatible
-filetype off
-filetype plugin indent off
-
-" Load neobundle
-if has('vim_starting')
-   set runtimepath+=~/.vim/bundle/neobundle.vim/
-   call neobundle#rc(expand('~/.vim/bundle/'))
+"NeoBundle Scripts-----------------------------
+if &compatible
+  set nocompatible               " Be iMproved
 endif
 
-" Bundles
+" Required:
+set runtimepath+=/home/zero/.vim/bundle/neobundle.vim/
+
+" Required:
+call neobundle#begin(expand('/home/zero/.vim/bundle'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Add or remove your Bundles here:
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'ctrlpvim/ctrlp.vim'
+
+"NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'vim-scripts/L9'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'othree/vim-autocomplpop'
@@ -24,8 +34,25 @@ NeoBundle 'vim-scripts/AutoFenc.vim'
 NeoBundle 'myusuf3/numbers.vim'
 NeoBundle 'stephpy/vim-php-cs-fixer'
 
+
+" You can specify revision/branch/tag.
+NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
+" Required:
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+"End NeoBundle Scripts-------------------------
+
 " Fix 'SnipMate-deprecated'
 let g:snipMate = { 'snippet_version' : 1 }
+
+
 
 " scroll jump
 set sj=1
